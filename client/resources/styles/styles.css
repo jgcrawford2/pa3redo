@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 800px;
+}
+
+#movie-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#add-movie-form {
+    margin-top: 20px;
+}
+
+
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+}
+ 
+[data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+}
+ 
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+ 
+button {
+    font-size: 15px;
+    text-align: center;
+    transition: all var(--global-transition-time) ease-in-out;
+    border-radius: 1px;
+    cursor: pointer;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+    border: 1.5px solid var(--color-fg);
+}
